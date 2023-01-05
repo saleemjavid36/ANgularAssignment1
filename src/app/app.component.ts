@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  log: [] | any =[];
   showSecret=false;
-  log:number[]=[];
-
-  onToggleDetails(){
+  // log:number[]=[];
+  onclick1(){
     this.showSecret=!this.showSecret;
-    this.log.push(this.log.length + 1)
+    //this.log.push(this.log.length + 1)
+    //this.log.push(this.log.length + 1)
+    this.log.push(new Date());
+   console.log(new Date())
   }
 }
